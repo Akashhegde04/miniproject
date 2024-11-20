@@ -1,0 +1,427 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#BEDC74;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    height: 80px;
+    
+  }
+  
+  .nav-left .logo {
+    height: 100px;
+  }
+  
+  .nav-right a {
+    color: #304D30;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+    
+  }
+  
+  .nav-right a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .logo{
+    position: relative;
+    right: 30px;
+    top: 6px;
+  }
+  
+  .logo-title{
+    position: relative;
+    bottom: 40px;
+    color: #304D30;
+    text-decoration:solid;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style:normal;
+    font-size:larger;
+    right: 30px;
+  }
+  
+  .form-container{
+      width : 100%;
+      height : 800px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+  }
+  
+  .login{
+    width: 50%;
+    height : 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-box{
+    width : 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #E2DAD6;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .side-img{
+    width : 50%;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+  }
+  .img-box
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .reg-btn,.skip-btn
+  {
+      min-width: 130px;
+      height: 40px;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      border-radius: 20px;
+      border: 2px solid #495057;
+      background: #495057;
+      width: 40%;
+      margin: 5px;
+      bottom: 30px;
+    }
+    .reg-btn:hover,.skip-btn:hover {
+      background: #fff;
+      color: #495057
+    }
+  
+    .login-txt
+    {
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    
+    }
+  
+    #reg-text
+    {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-weight: bold;
+      padding: 10px;
+      margin: 5px;
+      position: relative;
+      bottom: 30px;
+    }
+  
+    .login-inpt
+    {
+      font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+   border-radius: 40px;
+   height: 30px;
+   padding:8px;
+   text-align: center;
+   width: 70%;
+   margin: 5px;
+   padding: 10px;
+  }
+  
+  .login-inpt:focus{
+    outline: none; 
+    border: 2px solid black; 
+    box-shadow: 0 0 5px rgba(118, 199, 160, 0.5); 
+    background-color: #f9fff6; 
+  }
+  
+    .side-logo:hover {
+      animation: vibrate 0.5s infinite;
+    }
+    
+    @keyframes vibrate {
+      0%, 100% { transform: rotate(0deg); }
+      10%, 30%, 50%, 70%, 90% { transform: rotate(-1deg); }
+      20%, 40%, 60%, 80% { transform: rotate(1deg); }
+    }
+  
+  .sub-tag
+  {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    bottom: 100px;
+    text-decoration:line-through;
+    color:  #001F3F;
+  }
+  
+  #desc
+  {
+     position: relative;
+    bottom: 200px;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5)
+  }
+  
+  .description
+  {
+    position: relative;
+    bottom: 160px;
+  }
+  
+  .abt
+  {
+    text-align: center;
+    width: 75%;
+    position: relative;
+    left: 220px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+  }
+  
+  .abt-title
+  {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    text-decoration: underline;
+  }
+  
+  .contact-btn {
+    background: #1bf2d5;
+    background-image: -webkit-linear-gradient(top, #1bf2d5, #0bc2a1);
+    background-image: -moz-linear-gradient(top, #1bf2d5, #0bc2a1);
+    background-image: -ms-linear-gradient(top, #1bf2d5, #0bc2a1);
+    background-image: -o-linear-gradient(top, #1bf2d5, #0bc2a1);
+    background-image: linear-gradient(to bottom, #1bf2d5, #0bc2a1);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family:'Montserrat',sans-serif;
+    color: #0f0202;
+    font-size: 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: relative;
+    left: 22px;
+   
+  }
+  
+  .contact-btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    
+    text-decoration: none;
+  }
+  
+  
+  
+  .bottom-container{
+    margin: 100px;
+    background-color:#BEDC74;
+    margin: 40px auto auto auto;
+    padding:30px 30px 30px 30px ;
+    
+  }
+  
+  .contact-me
+  {
+  position: relative;
+  left: 685px;
+  font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+  }
+  
+  #cont
+  {
+    position: relative;
+    bottom: 120px; 
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5)
+  
+  }
+  
+  .footer-link
+  {
+    position: relative;
+    left: 428px;
+    margin: 70px;
+    color: #A594F9;
+    font-family:'Montserrat',sans-serif;
+    text-decoration: none;
+  }
+  
+  .cr{
+    position: relative;
+    left: 678px;
+    margin-top: 40px;
+  
+  }
+  
+  .footer-link:hover
+  {
+    color: #F4F6FF;
+  }
+  
+  
+  .log {
+    color: #000000;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #495057;
+    background:#fff;
+    position: relative;
+    left: 420px;
+    bottom: 35px;
+    width: 100px;
+  }
+  
+  .log:hover {
+    background: #789DBC;
+    color: #fff;
+  }
+    
+  
+  
+  
+  
+  /* register  */
+  
+   .register
+  {
+    width: 50%;
+    height : 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  
+  .register-box{
+    width : 70%;
+    height: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #E2DAD6;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .register-inpt
+  {
+      font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+   border-radius: 40px;
+   height: 30px;
+   padding:8px;
+   text-align: center;
+   width: 70%;
+   margin: 5px;
+   padding: 10px;
+  }
+  
+  .register-inpt:focus{
+    outline: none; 
+    border: 2px solid black; 
+    box-shadow: 0 0 5px rgba(118, 199, 160, 0.5); 
+    background-color: #f9fff6; 
+  }
+  
+  
+  .register-head
+  {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 0 10px;
+  
+  }
+  
+  
+  .back-login-btn,.create-btn
+  {
+      min-width: 130px;
+      height: 40px;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      border-radius: 20px;
+      border: 2px solid #495057;
+      background: #495057;
+      width: 40%;
+      margin: 5px;
+      
+    }
+   .create-btn:hover {
+      background: #fff;
+      color: #495057
+    } 
+    .back-login-btn:hover
+    {
+      background: #789DBC;
+    } 
+  
+  .hidden
+  {
+    display: none;
+    
+  }
+  
